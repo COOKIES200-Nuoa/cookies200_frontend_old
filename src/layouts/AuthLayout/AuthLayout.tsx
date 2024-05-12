@@ -5,10 +5,8 @@ import Footer from '../../components/Footer'
 
 const AuthLayout: React.FC = (): JSX.Element => {
     return (
-        <main className='bg-gray-100'>
-            <Header />
+        <main className='min-h-screen bg-gray-100'>
             <Outlet />
-            <Footer />
         </main>
     )
 }

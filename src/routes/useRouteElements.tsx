@@ -29,29 +29,6 @@ const useRouteElements = (): any => {
     const elements = useRoutes([
         {
             path: "",
-            element: <MainLayout />,
-            children: [
-                {
-                    path: PATH.HOME,
-                    index: true,
-                    element: (
-                        <Suspense fallback={<div>Loading</div>}>
-                            <HomePage />
-                        </Suspense>
-                    ),
-                },
-                {
-                    path: PATH.BOARD,
-                    element: (
-                        <Suspense fallback={<div>Loading</div>}>
-                            <BoardPage />
-                        </Suspense>
-                    ),
-                },
-            ],
-        },
-        {
-            path: "",
             element: <AuthLayout />,
             children: [
                 {
@@ -86,6 +63,29 @@ const useRouteElements = (): any => {
                     )
                 }
             ]
+        },
+        {
+            path: "",
+            element: <MainLayout />,
+            children: [
+                {
+                    path: PATH.HOME,
+                    index: true,
+                    element: (
+                        <Suspense fallback={<div>Loading</div>}>
+                            <HomePage />
+                        </Suspense>
+                    ),
+                },
+                {
+                    path: PATH.BOARD,
+                    element: (
+                        <Suspense fallback={<div>Loading</div>}>
+                            <BoardPage />
+                        </Suspense>
+                    ),
+                },
+            ],
         },
         {
             path: "*",
