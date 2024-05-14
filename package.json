@@ -15,6 +15,7 @@
     "@fontsource-variable/nunito": "^5.0.18",
     "@mui/material": "^5.15.15",
     "@reduxjs/toolkit": "^2.2.4",
+    "amazon-cognito-identity-js": "^6.3.12",
     "amazon-quicksight-embedding-sdk": "^2.6.0",
     "axios": "^1.6.8",
     "formik": "^2.4.5",
